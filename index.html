@@ -25,7 +25,7 @@
   <!-- Google Web Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="components/normalize-css/normalize.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
 
   <!--[if lt IE 9]>
@@ -35,44 +35,54 @@
 </head>
 <body>
 
-  <h1 class="site-title"><a href="#" title="PlanningCamp" rel="home"><span>Planning</span>CAMP</a></h1>
-  <h2 class="site-description">An <a href="#unconference-huh">unconference</a> exploring urban planning, technology, <span class="nobreak">and social change.</span></h2>
+  <h1 class="site-title"><img src="images/planningcamp-logo.png" class="logo"></h1>
+  <p class="site-description">An <a href="#unconference-huh">unconference</a> exploring <span class="nobreak">urban planning</span>, technology, and <span class="nobreak">social change.</span></p>
 
-  <div class="container primary">
-    <ul class="dates-list unstyled-list">
-      <li>
-        <strong class="city"><img src="images/icon-a0d2d3-map.png" class="map-marker icon-inline">NYC</strong> <span class="raquo">&raquo;</span> 
-        <span class="date nobreak">September 21st</span>
-        <a href="#" class="btn btn-small">Register</a>
-      </li>
-      <li>
-        <strong class="city"><img src="images/icon-a0d2d3-map.png" class="map-marker icon-inline">Bay Area</strong> <span class="raquo">&raquo;</span> 
-        <span class="date nobreak">October 12th</span>
-        <a href="#" class="btn btn-small">Register</a>
-      </li>
-      <li>
-        <strong class="city"><img src="images/icon-a0d2d3-map.png" class="map-marker icon-inline">Boston</strong> <span class="raquo">&raquo;</span> 
-        <span class="date nobreak">Spring 2014</span>
-        <a class="btn btn-small btn-disabled">Register</a>
-      </li>
-      <li>
-        <strong class="city"><img src="images/icon-a0d2d3-map.png" class="map-marker icon-inline">Philly</strong> <span class="raquo">&raquo;</span> 
-        <span class="date nobreak">Spring 2014</span>
-        <a class="btn btn-small btn-disabled">Register</a>
-      </li>
-      <li>
-        <strong class="city"><img src="images/icon-a0d2d3-map.png" class="map-marker icon-inline">Atlanta</strong> <span class="raquo">&raquo;</span> 
-        <span class="date nobreak">April 2014</span>
-        <a class="btn btn-small btn-disabled">Register</a>
-      </li>
-    </ul>
+  <div class="primary">
+    <div class="container">
+      <ul class="dates-list unstyled-list">
+        <li class="clearfix">
+          <span class="info">
+            <strong class="city"><img src="images/icon-fbad53-map.png" class="map-marker icon-inline">NYC</strong> <span class="raquo">&raquo;</span> 
+            <span class="date nobreak">September 21st</span>
+          </span>
+          <a href="#" class="btn">Register</a>
+        </li>
+        <li class="clearfix">
+          <span class="info">
+            <strong class="city"><img src="images/icon-fbad53-map.png" class="map-marker icon-inline">Bay Area</strong> <span class="raquo">&raquo;</span> 
+            <span class="date nobreak">October 12th</span>
+          </span>
+          <a href="#" class="btn">Register</a>
+        </li>
+        <li class="clearfix">
+          <span class="info">
+            <strong class="city"><img src="images/icon-fbad53-map.png" class="map-marker icon-inline">Boston</strong> <span class="raquo">&raquo;</span> 
+            <span class="date nobreak">Spring 2014</span>
+          </span>
+          <a class="btn btn-disabled">Register</a>
+        </li>
+        <li class="clearfix">
+          <span class="info">
+            <strong class="city"><img src="images/icon-fbad53-map.png" class="map-marker icon-inline">Philly</strong> <span class="raquo">&raquo;</span> 
+            <span class="date nobreak">Spring 2014</span>
+          </span>
+          <a class="btn btn-disabled">Register</a>
+        </li>
+        <li class="clearfix">
+          <span class="info">
+            <strong class="city"><img src="images/icon-fbad53-map.png" class="map-marker icon-inline">Atlanta</strong> <span class="raquo">&raquo;</span> 
+            <span class="date nobreak">April 2014</span>
+          </span>
+          <a class="btn btn-disabled">Register</a>
+        </li>
+      </ul>
 
+    </div>
   </div>
-  <span class="roadway">&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;</span>
-  <div class="container secondary">
 
-    <img src="images/tree.png" class="tree">
-    <img src="images/bike-tipped.png" class="bike">
+  <div class="secondary">
+    <div class="container">
 
     <h3 id="unconference-huh">What’s an unconference?</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -80,6 +90,7 @@
     <h3>Who will be there?</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+    </div>
   </div>
 
   <footer class="site-footer">
