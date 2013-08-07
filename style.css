@@ -144,7 +144,7 @@ body {
   max-width: 1000px;
 }
 .primary, .secondary, .site-footer {
-  padding: 1em 11%;
+  padding: 1em 6%;
 }
 .secondary {
   position: relative;
@@ -157,8 +157,18 @@ body {
 /* =Header
 -------------------------------------------------------------- */
 
+.site-header {
+  overflow: hidden;
+  text-align: center;
+}
+.site-intro {
+  padding: 0.5em 0.75em 0;
+  color: #fbad53;
+  font-weight: 700;
+}
 .site-title {
-  padding: 0.5em 0 0;
+  margin-right: -6%;
+  margin-left: -6%;
 }
 .logo {
   display: block;
@@ -169,7 +179,7 @@ body {
   font-weight: 700;
   color: #fff;
   background-color: #799AA0;
-  padding: 0.5em 11%;
+  padding: 0.5em 6%;
   text-shadow: 1px -1px 1px #787E78;
   border-bottom: 0.25em solid #ddd;
 }
@@ -222,19 +232,31 @@ ul.dates-list {
 }
 
 @media only screen and (min-width: 480px) {
+  .site-title {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .site-description { font-size: 1.5em; }
 }
 
 @media only screen and (min-width: 768px) {
+  .site-intro { 
+    text-align: left;
+    padding: 30px 0 0;
+    width: 25em;
+    margin: 0 0 0 30px;
+  }
   .logo { 
     width: 600px; 
     margin-left: 66px;
   }
   .site-description { 
     font-size: 1.75em; 
-    padding-right: 20%; 
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: left; 
   }
-  .primary, .secondary, .site-description, .site-footer {
+  .primary, .secondary, .site-footer {
     padding-left: 132px;
   }
   .info {
@@ -256,9 +278,46 @@ ul.dates-list {
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .site-description { 
-    font-size: 2.25em; 
-    padding-right: 20%; 
+@media only screen and (min-width: 1024px) {
+  .logo { 
+    margin-left: 26px;
+  }
+  .primary, .secondary, .site-footer {
+    padding-left: 92px;
+  }
+  .site-description {
+    padding-right: 41%;
+    padding-left: 30px;
+    margin: 0;
+    border-bottom: 0;
+  }
+  .primary {
+    position: absolute;
+    top: 4.5em;
+    right: 0;
+    padding: 1.5em 1.5em 0.5em;
+    background: #eee;
+    border-radius: 18px 0 0 18px;
+    box-shadow: 0 15px 0 rgba(0,0,0,0.1);
+  }
+  .info, 
+  .btn,
+  .btn:visited,
+  .btn:link {
+    float: none;
+  }
+  .container {
+    max-width: none;
+  }
+  .secondary section {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .primary {
+    left: 60%;
   }
 }
