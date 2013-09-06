@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 0 0.25em 0;
   font-weight: 700;
   text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+  line-height: 1.25;
 }
 h1 { font-size: 2em; }
 h2 { font-size: 2em; }
@@ -39,6 +40,9 @@ ul.unstyled-list li, ol.unstyled-list li {
 }
 strong {
   font-weight: 800;
+}
+blockquote {
+  font-size: 1.75em;
 }
 hr {
   margin: 1.5em 0;
@@ -143,7 +147,7 @@ body {
 .container {
   max-width: 1000px;
 }
-.primary, .secondary, .site-footer {
+.primary, .secondary, .site-footer, .tumblr {
   padding: 1em 6%;
 }
 .secondary {
@@ -217,12 +221,45 @@ ul.dates-list {
   background-color: #799AA0;
   border-top: 0.5em solid #A0D2D3;
   position: relative;
+  box-shadow: 0 15px 0 rgba(0,0,0,0.1);
 }
 .site-footer a {
   color: #fff;
   font-weight: 700;
 }
 .site-footer .container {}
+
+
+/* =Tumblr
+-------------------------------------------------------------- */
+
+.tumblr {
+  overflow: hidden;
+  background: #eee;
+  padding-top: 2em;
+}
+.post {  
+  max-width: 37em;
+  margin-bottom: 2em;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 0 rgba(0,0,0,0.1);
+}
+.post-container {
+  padding: 1.5em;
+}
+.post-title {
+  font-size: 2em;
+}
+.post-title a {
+  text-decoration: none;
+}
+.post-meta {
+  color: #799AA0;
+  font-size: 0.75em;
+  margin-top: 1em;
+  text-align: right;
+}
 
 
 /* =Media Queries for Responsive Layout
@@ -256,7 +293,7 @@ ul.dates-list {
     padding-left: 60px;
     text-align: left; 
   }
-  .primary, .secondary, .site-footer {
+  .primary, .secondary, .site-footer, .tumblr {
     padding-left: 132px;
   }
   .info {
@@ -282,7 +319,7 @@ ul.dates-list {
   .logo { 
     margin-left: 26px;
   }
-  .primary, .secondary, .site-footer {
+  .primary, .secondary, .site-footer, .tumblr {
     padding-left: 92px;
   }
   .site-description {

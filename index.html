@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
   <!-- Google Web Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
@@ -106,6 +106,105 @@
       <p>If you're interested in supporting PlanningCamp or bringing PlanningCamp to your city, please <a href="http://openplans.org/contact">contact us</a>!</p>
     </div>
   </footer>
+
+  <div class="tumblr">
+    <div class="tumblr-container clearfix">
+
+      <script type="text/javascript" src="http://planningcamp.tumblr.com/api/read/json"></script>
+      <script>
+        for (var i=0;i<tumblr_api_read.posts.length;i++) {
+
+          var thisPost = tumblr_api_read.posts[i];
+
+          if ( thisPost.type == 'regular' ) {
+
+            document.write(
+              '<article class="post regular" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<h4 class="post-title">' + thisPost['regular-title'] + '</h4>' +
+                '<div class="regular-body">' + thisPost['regular-body'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'link' ) {
+
+            document.write(
+              '<article class="post link" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<h4 class="post-title"><a href="' + thisPost['link-url'] + '">' + thisPost['link-text'] + '</a></h4>' +
+                '<div class="link-description">' + thisPost['link-description'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'quote' ) {
+
+            document.write(
+              '<article class="post quote" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<blockquote>' + thisPost['quote-text'] + '</blockquote>' +
+                '<div class="quote-source">' + thisPost['quote-source'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'photo' ) {
+
+            document.write(
+              '<article class="post photo" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<img src="' + thisPost['photo-url'] + '">' +
+                '<div class="photo-caption">' + thisPost['photo-caption'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'conversation' ) {
+
+            document.write(
+              '<article class="post conversation" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<h4 class="post-title">' + thisPost['conversation-title'] + '</h4>' +
+                '<div class="conversation">' + thisPost['conversation'] + '</div>' +
+                '<div class="conversation">' + thisPost['conversation-text'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'video' ) {
+
+            document.write(
+              '<article class="post video" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                thisPost['video-player'] +
+                '<div class="video-caption">' + thisPost['video-caption'] + '</div>' +
+                '<div class="video-source">' + thisPost['video-source'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'audio' ) {
+
+            document.write(
+              '<article class="post audio" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                thisPost['audio-player'] +
+                '<div class="audio-caption">' + thisPost['audio-caption'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          } else if ( thisPost.type == 'audio' ) {
+
+            document.write(
+              '<article class="post answer" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+                '<div class="question">' + thisPost['question'] + '</div>' +
+                '<div class="answer">' + thisPost['answer'] + '</div>' +
+                '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
+              '</div></article>'              
+            );
+
+          }
+
+        }
+      </script>
+
+    </div>
+  </div>
 
 </body>
 </html>
