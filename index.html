@@ -135,89 +135,98 @@
           if ( thisPost.type == 'regular' ) {
 
             document.write(
-              '<article class="post regular" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post regular" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<h4 class="post-title">' + thisPost['regular-title'] + '</h4>' +
                 '<div class="regular-body">' + thisPost['regular-body'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'link' ) {
 
             document.write(
-              '<article class="post link" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post link" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<h4 class="post-title"><a href="' + thisPost['link-url'] + '">' + thisPost['link-text'] + '</a></h4>' +
                 '<div class="link-description">' + thisPost['link-description'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'quote' ) {
 
             document.write(
-              '<article class="post quote" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post quote" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<blockquote>' + thisPost['quote-text'] + '</blockquote>' +
                 '<div class="quote-source">' + thisPost['quote-source'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'photo' ) {
 
             document.write(
-              '<article class="post photo" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post photo" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<img src="' + thisPost['photo-url'] + '">' +
                 '<div class="photo-caption">' + thisPost['photo-caption'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'conversation' ) {
 
             document.write(
-              '<article class="post conversation" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post conversation" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<h4 class="post-title">' + thisPost['conversation-title'] + '</h4>' +
                 '<div class="conversation">' + thisPost['conversation'] + '</div>' +
                 '<div class="conversation">' + thisPost['conversation-text'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'video' ) {
 
             document.write(
-              '<article class="post video" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post video" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 thisPost['video-player'] +
                 '<div class="video-caption">' + thisPost['video-caption'] + '</div>' +
                 '<div class="video-source">' + thisPost['video-source'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'audio' ) {
 
             document.write(
-              '<article class="post audio" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post audio" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 thisPost['audio-player'] +
                 '<div class="audio-caption">' + thisPost['audio-caption'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           } else if ( thisPost.type == 'audio' ) {
 
             document.write(
-              '<article class="post answer" id="' + thisPost['slug'] + '"><div class="post-container">' + 
+              '<article class="post answer" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<div class="question">' + thisPost['question'] + '</div>' +
                 '<div class="answer">' + thisPost['answer'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-              '</div></article>'              
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+              '</div></article>'
             );
 
           }
 
         }
       </script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
     </div>
   </div>

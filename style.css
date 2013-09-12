@@ -261,8 +261,12 @@ ul.dates-list {
 .post-meta {
   color: #799AA0;
   font-size: 0.75em;
-  margin-top: 1em;
-  text-align: right;
+  margin-top: 3.5em;
+  float: right;
+}
+.twitter-share-button {
+  float: left;
+  margin-top: 2em;
 }
 
 
