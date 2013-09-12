@@ -212,6 +212,10 @@ ul.dates-list {
   max-width: 37em;
 }
 
+.twitter-widget {
+  display: none;
+}
+
 
 /* =Footer
 -------------------------------------------------------------- */
@@ -312,6 +316,9 @@ ul.dates-list {
   }
   .dates-list li {
     margin-bottom: 1em;
+  }
+  .twitter-widget {
+    display: block;
   }
 }
 
