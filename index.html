@@ -150,7 +150,7 @@
                 '<h4 class="post-title"><a href="' + thisPost['link-url'] + '">' + thisPost['link-text'] + '</a></h4>' +
                 '<div class="link-description">' + thisPost['link-description'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="' + thisPost['link-url'] + '" data-text="" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
@@ -161,7 +161,7 @@
                 '<blockquote>' + thisPost['quote-text'] + '</blockquote>' +
                 '<div class="quote-source">' + thisPost['quote-source'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['quote-text'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
@@ -172,7 +172,7 @@
                 '<img src="' + thisPost['photo-url'] + '">' +
                 '<div class="photo-caption">' + thisPost['photo-caption'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['photo-caption'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
@@ -184,7 +184,7 @@
                 '<div class="conversation">' + thisPost['conversation'] + '</div>' +
                 '<div class="conversation">' + thisPost['conversation-text'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['conversation-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
@@ -196,7 +196,7 @@
                 '<div class="video-caption">' + thisPost['video-caption'] + '</div>' +
                 '<div class="video-source">' + thisPost['video-source'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['video-caption'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
@@ -207,18 +207,18 @@
                 thisPost['audio-player'] +
                 '<div class="audio-caption">' + thisPost['audio-caption'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['audio-caption'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
-          } else if ( thisPost.type == 'audio' ) {
+          } else if ( thisPost.type == 'answer' ) {
 
             document.write(
               '<article class="post answer" id="' + thisPost['slug'] + '"><div class="post-container clearfix">' + 
                 '<div class="question">' + thisPost['question'] + '</div>' +
                 '<div class="answer">' + thisPost['answer'] + '</div>' +
                 '<div class="post-meta">Posted on <a href="#' + thisPost['slug'] + '">' + thisPost['date'] + '</a></div>' +
-                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['regular-title'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
+                '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://planningcamp.org/#' + thisPost['slug'] + '" data-text="' + thisPost['question'] + '" data-via="PlanningCamp" data-size="large" data-count="none" data-hashtags="plancamp">Tweet</a>' +
               '</div></article>'
             );
 
