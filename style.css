@@ -154,7 +154,8 @@ body {
   position: relative;
   background-color: #cef0f2;
   text-shadow: 0 1px 1px rgba(255,255,255,0.75);
-  border-top: 0.25em solid #acdfe3;
+  border-top: 15px solid #acdfe3;
+  border-bottom: 15px solid #acdfe3;
 }
 
 
@@ -185,7 +186,7 @@ body {
   background-color: #799AA0;
   padding: 0.5em 6%;
   text-shadow: 1px -1px 1px #787E78;
-  border-bottom: 0.25em solid #ddd;
+  border-bottom: 15px solid #ddd;
 }
 .site-description a {
   color: #fff;
@@ -223,7 +224,7 @@ ul.dates-list {
 .site-footer {
   color: #cef0f2;
   background-color: #799AA0;
-  border-top: 0.5em solid #A0D2D3;
+  border-top: 15px solid #A0D2D3;
   position: relative;
   box-shadow: 0 15px 0 rgba(0,0,0,0.1);
 }
@@ -245,12 +246,13 @@ ul.dates-list {
 .post {  
   max-width: 37em;
   margin-bottom: 2em;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 15px 0 rgba(0,0,0,0.1);
 }
 .post-container {
   padding: 1.5em;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 .post-title {
   font-size: 2em;
@@ -361,6 +363,19 @@ ul.dates-list {
     width: 45%;
     float: left;
     margin-right: 5%;
+  }
+
+  .tumblr-container {
+    margin-right: -1em;
+    margin-left: -1em;
+  }
+  .post {  
+    float: left;
+    max-width: 50%;
+  }
+  .post-container {
+    margin-right: 1em;
+    margin-left: 1em;
   }
 }
 
