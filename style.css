@@ -101,6 +101,12 @@ img {
           box-sizing: border-box;
   width: 100%;
 }
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:visited,
+.btn-secondary:link {
+  background-color: #fbad53;
+}
 .btn-disabled,
 .btn-disabled:hover,
 .btn-disabled:visited,
