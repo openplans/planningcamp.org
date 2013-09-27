@@ -221,6 +221,22 @@ ul.dates-list {
 
 .twitter-widget {
   display: none;
+  margin-bottom: 2em;
+}
+
+.sponsor-widget {
+  padding: 1.5em;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 0 rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+}
+.sponsor-logo {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.urban-strategies-council-logo {
+  max-width: 100px;
 }
 
 
