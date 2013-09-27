@@ -232,12 +232,16 @@ ul.dates-list {
   margin-bottom: 2em;
 }
 .sponsor-logo {
-  float: left;
-  margin: 0 1em 1em 0;
+  display: block;
+  margin: 0 1em 0.75em 0;
 }
+.sponsor-info {}
+.knight-foundation-logo {}
 .urban-strategies-council-logo {
-  max-width: 100px;
+  max-width: 20%;
+  float: left;
 }
+.urban-strategies-council-sponsor-info {}
 
 
 /* =Footer
