@@ -152,8 +152,11 @@ body {
 }
 .pre-header {
   padding: 0.5em 1em;
-  background: #eee;
+  background: #ddd;
   margin-bottom: 1em;
+}
+.pre-header p {
+  margin-bottom: 0.5em;
 }
 .container {
   max-width: 1000px;
